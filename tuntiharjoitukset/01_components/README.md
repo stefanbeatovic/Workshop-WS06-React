@@ -128,4 +128,34 @@ File: [`src/components/CounterCard.jsx`](src/components/CounterCard.jsx)
 
 ---
 
+## Completed tasks
+
+- Created reusable functional components
+- Passed component data with props
+- Rendered a list of team profiles with `map()` and unique keys
+- Added increment, decrement, and reset state controls with `useState`
+- Verified the app with a production build
+
+## Run in a browser
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173`.
+
+In the browser:
+
+- Confirm that all team profile cards are visible
+- Use `+1` to increase the counter
+- Use `-1` to decrease the counter
+- Use `Reset` to return the counter to zero
+
+## Verification
+
+```bash
+npm run build
+```
+
 The content of this file was generated with the help of [GitHub Copilot](https://github.com/features/copilot).

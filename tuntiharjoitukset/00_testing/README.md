@@ -1,16 +1,36 @@
-# React + Vite
+# 00 – React + Vite Testing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This exercise provides a basic React + Vite app for testing JSX, components, variables, event handlers, lists, and React state.
 
-Currently, two official plugins are available:
+## Completed tasks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Created and verified the React + Vite setup
+- Split the interface into `Header`, `Content`, and `Footer` components
+- Demonstrated JSX text and variables
+- Demonstrated button click and double-click event handlers
+- Used `useState` to update text dynamically
+- Demonstrated arrays and `.map()`
+- Removed unused template imports
+- Verified the app with ESLint and a production build
 
-## React Compiler
+## Run in a browser
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open `http://localhost:5173`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+In the browser:
+
+- Double-click the “Hello FullStack” paragraph to change the displayed name
+- Click “Nappi 1”, “Nappi 2”, and “Nappi 3” to test event handlers
+- Confirm the header, footer, paragraphs, and list output are visible
+
+## Verification
+
+```bash
+npm run lint
+npm run build
+```
