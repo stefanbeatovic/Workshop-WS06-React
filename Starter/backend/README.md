@@ -84,7 +84,7 @@ Requirements for DELETE:
 ## Done Checklist
 
 - [x] Server starts without syntax errors
-- [ ] MongoDB connection works (requires your local `.env`)
+- [x] MongoDB connection works
 - [x] Post model validation rules are implemented
 - [x] PUT route is implemented
 - [x] DELETE route is implemented

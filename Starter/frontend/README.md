@@ -79,7 +79,7 @@ Implement the TODOs inside these files:
 - [x] Delete action removes a post and redirects to blog
 - [x] Navigation links work for all main routes
 - [x] Frontend production build passes
-- [ ] Full browser flow tested with the backend and MongoDB running
+- [x] Full browser flow tested with the backend and MongoDB running
 
 ## Browser test
 
