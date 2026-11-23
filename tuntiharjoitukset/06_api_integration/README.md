@@ -164,3 +164,40 @@ npm run dev      # Vite dev server on port 5177
 Then open **http://localhost:5177**.
 
 > **Note:** data is stored in memory — it resets every time the backend restarts. This is intentional; the focus here is the frontend integration pattern, not persistence.
+
+## Completed tasks
+
+- Created an Express REST API with in-memory notes
+- Added GET, POST, PUT, and DELETE routes
+- Centralized frontend fetch calls in `src/api/notes.js`
+- Configured the Vite `/api` proxy
+- Added routes for the note list, detail, create, edit, and 404 pages
+- Added loading and error states
+- Added the create, edit, and delete flows
+- Tested the API CRUD operations successfully
+
+## Test in the browser
+
+1. Start the backend first.
+2. Start the frontend in a second terminal.
+3. Open `http://localhost:5177`.
+4. Confirm that the initial notes appear.
+5. Click `+ New note`.
+6. Enter a title and body, then create the note.
+7. Confirm that the new note detail page opens.
+8. Click `Edit`, change the note, and save it.
+9. Confirm that the updated note appears.
+10. Delete the note and confirm that the browser returns to the notes list.
+11. Visit an unknown route and confirm that the 404 page appears.
+
+Remember: the notes are stored in memory and disappear when the backend restarts.
+
+## Build check
+
+```bash
+cd frontend
+npm run build
+
+cd ../backend
+node --check server.js
+```
