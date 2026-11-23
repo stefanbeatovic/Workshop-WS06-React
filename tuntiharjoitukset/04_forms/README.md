@@ -83,3 +83,35 @@ src/
 npm install
 npm run dev
 ```
+
+Open `http://localhost:5173`.
+
+## Completed tasks
+
+- Used controlled inputs for text, email, select, textarea, and checkbox fields
+- Added one change handler for all form fields
+- Validated required fields, email format, and message length
+- Cleared each field error while the user corrects that field
+- Added submitting and success states
+- Disabled the form while submission is simulated
+- Added a success summary and reset button
+
+## Test in the browser
+
+1. Leave the form empty and click `Send message`.
+2. Confirm that validation messages appear below the fields.
+3. Enter a name and an invalid email.
+4. Confirm that the email validation message appears.
+5. Enter a valid email and choose a topic.
+6. Enter fewer than 10 characters in the message and submit.
+7. Confirm that the message-length error appears.
+8. Enter a valid message and optionally select the newsletter checkbox.
+9. Submit the form and confirm that `Sending…` appears briefly.
+10. Confirm that the submitted summary appears.
+11. Click `Send another message` and confirm that the form resets.
+
+## Build check
+
+```bash
+npm run build
+```
