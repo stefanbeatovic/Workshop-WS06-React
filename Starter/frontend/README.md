@@ -107,7 +107,7 @@ Branch: main
 Add this environment variable:
 
 ```text
-VITE_API_BASE_URL=https://workshop-ws06-react-fj1t.onrender.com
+VITE_API_BASE_URL=https://workshop-ws06-react-backend.onrender.com
 ```
 
 The frontend reads this variable at build time. After adding or changing it, trigger a new deploy.

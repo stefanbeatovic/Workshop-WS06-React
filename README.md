@@ -4,7 +4,7 @@
 
 **Open the deployed application:** https://workshop-ws06-react-1.onrender.com
 
-**Backend API:** https://workshop-ws06-react-fj1t.onrender.com
+**Backend API:** https://workshop-ws06-react-backend.onrender.com
 
 This repository contains the WS06 React exercises and the completed Starter React + REST API assignment.
 
