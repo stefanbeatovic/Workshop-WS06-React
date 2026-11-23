@@ -107,6 +107,34 @@ File: [src/components/SummaryCard.jsx](src/components/SummaryCard.jsx)
         └── SummaryCard.jsx      # derived information from state
 ```
 
-      ---
+## Completed tasks
 
-      The content of this file was generated with the help of [GitHub Copilot](https://github.com/features/copilot).
+- Used `useState` for the topic list, selected topic, and filter
+- Passed topic information and functions from `App` to child components with props
+- Added filter buttons that show All, Beginner, or Intermediate topics
+- Added a vote button that increases a topic's vote count
+- Used `filter()`, `find()`, and `reduce()` to create the summary
+- Made the selected topic update when a topic card is clicked
+
+## Test in the browser
+
+Run:
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:5173`, then try:
+
+1. Click `Beginner` and check that only beginner topics appear.
+2. Click `Intermediate` and check that only the intermediate topic appears.
+3. Click `All` to show all topics again.
+4. Click `Vote` on a topic and check that the vote count and total votes change.
+5. Click a topic card and check that its information appears in the summary panel.
+
+## Build check
+
+```bash
+npm run build
+```
