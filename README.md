@@ -79,3 +79,33 @@ The frontend uses `/api/posts` and expects the backend to run on `http://localho
 
 - Keep student implementation work inside `Starter/`.
 - Keep `solution/` unchanged as the reference baseline.
+
+## Assignment verification screenshots
+
+The following screenshots show the completed Starter assignment running locally.
+
+### Blog post detail
+
+![Blog post detail page](documentation/screenshots/01-blog-post-detail.png)
+
+### Frontend server running
+
+![Vite frontend server running](documentation/screenshots/02-frontend-server-running.png)
+
+### MongoDB cluster dashboard
+
+![MongoDB Atlas cluster dashboard](documentation/screenshots/03-mongodb-cluster-dashboard.png)
+
+### MongoDB database user
+
+![MongoDB database user](documentation/screenshots/04-mongodb-database-user.png)
+
+## Verification summary
+
+- The backend connected successfully to MongoDB.
+- The Express API started on `http://localhost:3000`.
+- The React frontend started on `http://localhost:5173`.
+- The blog list, create, detail, edit, and delete flows were tested.
+- The screenshots confirm the working post detail page, frontend server, MongoDB cluster, and database user.
+
+The student is the main author of this assignment and made the final decisions about the code and content. AI assistance was used to help understand the requirements, review the implementation, troubleshoot deployment, and improve the documentation.
