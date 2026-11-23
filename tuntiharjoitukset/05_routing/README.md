@@ -104,3 +104,30 @@ npm run dev
 | Open `/posts` and click a post | URL becomes `/posts/2`, detail page renders |
 | Click ← Back on a post | `navigate(-1)` returns to the previous page |
 | Visit `/anything-random` | Catch-all route renders the 404 page with the attempted path |
+
+## Completed tasks
+
+- Added `BrowserRouter` around the whole React app
+- Added routes for Home, About, Posts, post details, and unknown URLs
+- Used `NavLink` for active navigation styling
+- Used `Link` for navigation without page reloads
+- Used `useParams()` to read a post ID from the URL
+- Used `useNavigate()` for the Back button
+- Used `useLocation()` to show the attempted path on the 404 page
+
+## Test in the browser
+
+1. Open `http://localhost:5173`.
+2. Click `Posts` and confirm the URL ends in `/posts`.
+3. Click a post and confirm the URL becomes `/posts/<id>`.
+4. Confirm that the title and body of that post are shown.
+5. Click `← Back` and confirm that the posts page is restored.
+6. Visit `http://localhost:5173/unknown-page`.
+7. Confirm that the 404 page shows `/unknown-page`.
+8. Confirm that the active navigation link changes while moving between pages.
+
+## Build check
+
+```bash
+npm run build
+```
