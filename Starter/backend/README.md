@@ -99,3 +99,9 @@ Do not share or commit the `.env` file.
 MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/blog
 PORT=3000
 ```
+
+For a separate Render frontend, set this optional environment variable after creating the frontend service:
+
+```env
+FRONTEND_ORIGIN=https://your-frontend-name.onrender.com
+```

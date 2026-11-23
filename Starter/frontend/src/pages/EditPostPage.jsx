@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import PostForm from '../components/PostForm.jsx'
+import { postsApiUrl } from '../api.js'
 
 function EditPostPage() {
   const { id } = useParams()
@@ -19,7 +20,7 @@ function EditPostPage() {
         setLoading(true)
         setError(null)
 
-        const response = await fetch(`/api/posts/${id}`, {
+        const response = await fetch(postsApiUrl(`/${id}`), {
           signal: controller.signal,
         })
         const data = await response.json()
@@ -58,7 +59,7 @@ function EditPostPage() {
     }
 
     try {
-      const response = await fetch(`/api/posts/${id}`, {
+      const response = await fetch(postsApiUrl(`/${id}`), {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),

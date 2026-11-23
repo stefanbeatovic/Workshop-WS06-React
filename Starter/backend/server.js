@@ -1,11 +1,16 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 require('dotenv').config();
 
 const postsRouter = require('./routes/posts');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const allowedOrigins = (process.env.FRONTEND_ORIGIN || '')
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
 
 async function connectToDatabase() {
   if (!process.env.MONGODB_URI) {
@@ -24,6 +29,26 @@ async function connectToDatabase() {
 }
 
 app.use(express.json());
+app.use(cors({
+  origin(origin, callback) {
+    if (!origin || allowedOrigins.length === 0 || allowedOrigins.includes(origin)) {
+      callback(null, true);
+      return;
+    }
+
+    callback(new Error('CORS blocked for this origin'));
+  },
+}));
+app.use(cors({
+  origin(origin, callback) {
+    if (!origin || allowedOrigins.length === 0 || allowedOrigins.includes(origin)) {
+      callback(null, true);
+      return;
+    }
+
+    callback(new Error('CORS blocked for this origin'));
+  },
+}));
 app.use('/api/posts', postsRouter);
 
 app.use((req, res) => {

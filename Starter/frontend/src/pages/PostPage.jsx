@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate, Link } from 'react-router-dom'
+import { postsApiUrl } from '../api.js'
 
 function PostPage() {
   const { id } = useParams()
@@ -18,7 +19,7 @@ function PostPage() {
         setLoading(true)
         setError(null)
 
-        const response = await fetch(`/api/posts/${id}`, {
+        const response = await fetch(postsApiUrl(`/${id}`), {
           signal: controller.signal,
         })
         const data = await response.json()
@@ -49,7 +50,7 @@ function PostPage() {
     setError(null)
 
     try {
-      const response = await fetch(`/api/posts/${id}`, {
+      const response = await fetch(postsApiUrl(`/${id}`), {
         method: 'DELETE',
       })
       const data = await response.json()

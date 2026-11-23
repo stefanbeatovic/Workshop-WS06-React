@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import PostCard from '../components/PostCard.jsx'
+import { postsApiUrl } from '../api.js'
 
 function HomePage() {
   const [posts, setPosts] = useState([])
@@ -11,7 +12,7 @@ function HomePage() {
 
     async function fetchPosts() {
       try {
-        const response = await fetch('/api/posts', {
+        const response = await fetch(postsApiUrl(), {
           signal: controller.signal,
         })
 

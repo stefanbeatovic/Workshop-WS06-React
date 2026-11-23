@@ -92,3 +92,24 @@ After the backend is running:
 5. Open `Edit`, change the fields, and save.
 6. Confirm that the update appears.
 7. Delete the post and confirm that `/blog` opens.
+
+## Render deployment
+
+Deploy the frontend as a Render **Static Site** with these settings:
+
+```text
+Root Directory: Starter/frontend
+Build Command: npm install && npm run build
+Publish Directory: dist
+Branch: main
+```
+
+Add this environment variable:
+
+```text
+VITE_API_BASE_URL=https://workshop-ws06-react-fj1t.onrender.com
+```
+
+The frontend reads this variable at build time. After adding or changing it, trigger a new deploy.
+
+The backend also needs the frontend URL as `FRONTEND_ORIGIN` after the frontend service is created. Redeploy the backend after setting that value.
