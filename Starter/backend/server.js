@@ -39,16 +39,6 @@ app.use(cors({
     callback(new Error('CORS blocked for this origin'));
   },
 }));
-app.use(cors({
-  origin(origin, callback) {
-    if (!origin || allowedOrigins.length === 0 || allowedOrigins.includes(origin)) {
-      callback(null, true);
-      return;
-    }
-
-    callback(new Error('CORS blocked for this origin'));
-  },
-}));
 app.use('/api/posts', postsRouter);
 
 app.use((req, res) => {

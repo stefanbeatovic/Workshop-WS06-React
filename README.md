@@ -4,7 +4,9 @@
 
 **Open the deployed application:** https://workshop-ws06-react-1.onrender.com
 
-This repository contains a student starter package and a complete reference solution for the WS06 React + REST API workshop.
+**Backend API:** https://workshop-ws06-react-fj1t.onrender.com
+
+This repository contains the WS06 React exercises and the completed Starter React + REST API assignment.
 
 ## Current Structure
 
@@ -24,30 +26,16 @@ WS06_React/
 │     ├─ package.json
 │     ├─ vite.config.js
 │     └─ src/
-├─ solution/
-│  ├─ backend/
-│  │  ├─ README.md
-│  │  ├─ package.json
-│  │  ├─ server.js
-│  │  ├─ models/
-│  │  └─ routes/
-│  └─ frontend/
-│     ├─ README.md
-│     ├─ package.json
-│     ├─ vite.config.js
-│     └─ src/
 └─ tuntiharjoitukset/
 ```
+
+The repository does not include a `solution/` directory in the current workshop package. The class exercises and mandatory Starter implementation are complete.
 
 ## Folder Purpose
 
 - `Starter/`
   - Student workspace with TODOs and guided tasks.
   - Students should implement missing backend and frontend features here.
-
-- `solution/`
-  - Teacher/reference implementation.
-  - Use this to compare behavior or review complete code.
 
 - `tuntiharjoitukset/`
   - Additional class exercises kept for course support.
@@ -114,11 +102,14 @@ The following screenshots show the completed Starter assignment running locally.
 
 ## Verification summary
 
-- The backend connected successfully to MongoDB.
-- The Express API started on `http://localhost:3000`.
-- The React frontend started on `http://localhost:5173`.
+- The backend connected successfully to MongoDB locally and on Render.
+- The Express API was implemented for `GET`, `POST`, `PUT`, and `DELETE` `/api/posts`.
+- The React frontend builds successfully and is deployed on Render.
+- The frontend static site returned HTTP `200`.
+- The local backend and frontend CRUD flow were tested in the browser.
+- The live backend URL should be redeployed once more after any backend environment or source changes.
 - The blog list, create, detail, edit, and delete flows were tested.
-- The screenshots confirm the working post detail page, frontend server, MongoDB cluster, and database user.
+- The screenshots confirm the working post detail page, frontend server, MongoDB cluster, database user, and successful Render builds.
 - Both the backend and frontend deployments completed successfully on Render.
 
 ## AI assistance disclaimer
