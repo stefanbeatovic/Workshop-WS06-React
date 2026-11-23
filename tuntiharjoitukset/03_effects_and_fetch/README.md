@@ -35,3 +35,27 @@ response arrives, the stale request is aborted and its result is silently droppe
 npm install
 npm run dev
 ```
+
+Open `http://localhost:5173`. The app needs an internet connection because it fetches sample data from JSONPlaceholder.
+
+## Completed tasks
+
+- Fetched all users once when the app mounts
+- Used an empty dependency array for the first `useEffect`
+- Fetched posts again when the selected user changes
+- Used `selectedUserId` as an effect dependency
+- Used `AbortController` to cancel old or unmounted requests
+- Added loading, error, idle, and success states
+- Updated the browser tab title with a separate effect
+
+## Test in the browser
+
+1. Check that the page first shows `Loading users…`.
+2. Confirm that a list of users appears.
+3. Before choosing a user, confirm the posts section says `Pick a user`.
+4. Click a user and confirm the posts section changes to `Loading posts…`.
+5. Confirm that posts for the selected user appear.
+6. Click a different user and confirm the post list changes.
+7. Check that the browser tab title changes to the selected user's name.
+
+The app already handles fetch failures and shows an error message if JSONPlaceholder cannot be reached.
