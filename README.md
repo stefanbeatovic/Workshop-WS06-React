@@ -108,4 +108,6 @@ The following screenshots show the completed Starter assignment running locally.
 - The blog list, create, detail, edit, and delete flows were tested.
 - The screenshots confirm the working post detail page, frontend server, MongoDB cluster, and database user.
 
+## AI assistance disclaimer
+
 The student is the main author of this assignment and made the final decisions about the code and content. AI assistance was used to help understand the requirements, review the implementation, troubleshoot deployment, and improve the documentation.
