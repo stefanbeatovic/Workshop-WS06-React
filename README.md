@@ -104,6 +104,14 @@ The following screenshots show the completed Starter assignment running locally.
 
 ![MongoDB database user](documentation/screenshots/04-mongodb-database-user.png)
 
+### Render backend deployment success
+
+![Successful Render backend deployment](documentation/screenshots/05-render-backend-deployment-success.png)
+
+### Render frontend deployment success
+
+![Successful Render frontend deployment](documentation/screenshots/06-render-frontend-deployment-success.png)
+
 ## Verification summary
 
 - The backend connected successfully to MongoDB.
@@ -111,6 +119,7 @@ The following screenshots show the completed Starter assignment running locally.
 - The React frontend started on `http://localhost:5173`.
 - The blog list, create, detail, edit, and delete flows were tested.
 - The screenshots confirm the working post detail page, frontend server, MongoDB cluster, and database user.
+- Both the backend and frontend deployments completed successfully on Render.
 
 ## AI assistance disclaimer
 
