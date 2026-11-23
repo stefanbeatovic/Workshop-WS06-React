@@ -1,5 +1,7 @@
 # WS06 React
 
+Live frontend: https://workshop-ws06-react-1.onrender.com
+
 This repository contains a student starter package and a complete reference solution for the WS06 React + REST API workshop.
 
 ## Current Structure
