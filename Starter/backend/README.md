@@ -21,7 +21,7 @@ Default API base URL:
 
 ## Files You Need To Complete
 
-- server.js — **connectToDatabase function** (see the TODO comment in the file)
+- server.js — MongoDB connection setup
 - models/Post.js
 - routes/posts.js
 
@@ -29,19 +29,8 @@ Default API base URL:
 
 ### 1) connectToDatabase function in server.js
 
-A TODO comment at the top of server.js describes exactly what this function should do:
-
-```
-✓ Check if process.env.MONGODB_URI exists
-  - If missing, log a warning and return early
-✓ Use try-catch to safely call mongoose.connect()
-✓ Pass options: { dbName: 'blog' }
-✓ Log "Connected to MongoDB" on success
-✓ Log "MongoDB connection error: <error.message>" on failure
-✓ Make it async (return a Promise)
-```
-
-**Hint:** Check the solution file at `solution/backend/server.js` to see a working example, or review WS05 Server.js for similar patterns.
+The `connectToDatabase` function checks if `process.env.MONGODB_URI` exists,
+connects with `{ dbName: 'blog' }`, and logs the success or failure message.
 
 ### 2) Post model in models/Post.js
 
@@ -94,9 +83,19 @@ Requirements for DELETE:
 
 ## Done Checklist
 
-- [ ] Server starts without syntax errors
-- [ ] MongoDB connection works
-- [ ] Post model validations work
-- [ ] PUT route is implemented and tested
-- [ ] DELETE route is implemented and tested
-- [ ] All API responses are valid JSON
+- [x] Server starts without syntax errors
+- [ ] MongoDB connection works (requires your local `.env`)
+- [x] Post model validation rules are implemented
+- [x] PUT route is implemented
+- [x] DELETE route is implemented
+- [x] API responses use JSON
+
+## What still needs action
+
+Create `Starter/backend/.env` and set `MONGODB_URI` to your MongoDB connection string.
+Do not share or commit the `.env` file.
+
+```env
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/blog
+PORT=3000
+```

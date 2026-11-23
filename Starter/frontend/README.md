@@ -71,11 +71,24 @@ Implement the TODOs inside these files:
 
 ## Done Checklist
 
-- [ ] All TODOs in selected frontend files are completed
-- [ ] Blog list page loads posts from API
-- [ ] New post form creates a post
-- [ ] Single post page shows one post by id
-- [ ] Edit page updates post data
-- [ ] Delete action removes a post and redirects to blog
-- [ ] No console errors in browser
-- [ ] App works with backend running on port 3000
+- [x] All selected frontend TODOs are completed
+- [x] Blog list page loads posts from API
+- [x] New post form creates a post
+- [x] Single post page shows one post by id
+- [x] Edit page updates post data
+- [x] Delete action removes a post and redirects to blog
+- [x] Navigation links work for all main routes
+- [x] Frontend production build passes
+- [ ] Full browser flow tested with the backend and MongoDB running
+
+## Browser test
+
+After the backend is running:
+
+1. Start the frontend with `npm run dev`.
+2. Open `/blog` and confirm that posts load.
+3. Open `New post`, enter valid data, and submit.
+4. Confirm that the new post detail page opens.
+5. Open `Edit`, change the fields, and save.
+6. Confirm that the update appears.
+7. Delete the post and confirm that `/blog` opens.
